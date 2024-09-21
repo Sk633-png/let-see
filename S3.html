@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quantum Games</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #000;
+                color: #fff;
+            }
+    
+            .navbar {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 2rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+            }
+    
+            .logo-container {
+                flex-shrink: 0; /* Prevents logo from shrinking */
+            }
+    
+            .logo {
+                height: 100px; /* Increased size */
+                width: auto;
+            }
+    
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 2rem;
+                margin: 0;
+                padding: 0;
+                flex-grow: 1;
+                justify-content: flex-start; /* Aligns text to the left */
+                position: relative;
+                left: 25%; /* Shift text to the left */
+            }
+    
+            .nav-links li {
+                position: relative;
+            }
+    
+            .nav-links a {
+                text-decoration: none;
+                color: #000;
+                font-family: Arial, sans-serif;
+                font-size: 1.2rem; /* Font size */
+                font-weight: 600;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease, transform 0.3s ease;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-links a:hover {
+                color: #007bff; /* Blue highlight color */
+                transform: scale(1.1);
+            }
+    
+            .nav-links a::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px; /* Thicker underline */
+                background-color: #007bff; /* Blue highlight color */
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease;
+            }
+    
+            .nav-links a:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Assessment Screenshots/Creamy Yellow Orange Retro Gaming Logo (1).png" alt="Quantum Games Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="ps5.html">PS5</a></li>
+                <li><a href="xbox.html">XBOX</a></li>
+                <li><a href="nintendo.html">NINTENDO</a></li>
+             
+            </ul>
+        </nav>
+    </body>
+    </html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splatoon 3
+        - Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url(https://media.istockphoto.com/id/1822889082/vector/luxury-background-curved-shapes-lines-lights-and-shadows.jpg?s=612x612&w=0&k=20&c=jfMsPDaJITe72HyX6w2qQP7yT8rNJQlL4tUEYpttMMI=);
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 1200px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery {
+            width: 45%;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail-images {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .thumbnail-images img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .thumbnail-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-details {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            font-size: 20px;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+
+        .stock-status {
+            font-size: 18px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+
+        .wishlist {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ff4444;
+            cursor: pointer;
+        }
+
+        .bundle {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .bundle img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bundle-price {
+            font-size: 20px;
+            color: #222;
+        }
+
+        .add-bundle {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-left: auto;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-bundle:hover {
+            background-color: #004c99;
+        }
+
+        /* Game Card List Styles */
+.game-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.game-card {
+    width: 23%;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-title {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.game-price {
+    font-size: 20px;
+    color: #28a745;
+}
+
+.game-deposit {
+    font-size: 14px;
+    color: #999;
+}
+
+.preorder-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal input[type="text"], .modal input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .modal .pay-now {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal .pay-now:hover {
+            background-color: #0056b3;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* Success Modal Styles */
+        .download-animation {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 8px solid #ccc;
+            border-top: 8px solid #4CAF50;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .download-message {
+            font-size: 18px;
+            color: #333;
+            margin-top: 15px;
+        }
+        /* Progress Bar Animation */
+.download-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.download-message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+.text-size-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text-size-btn {
+    background-color: #28a745; /* Matches your green theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.text-size-btn:hover {
+    background-color: #218838; /* Darker green for hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.text-size-btn:active {
+    transform: scale(0.95); /* Shrink a bit when clicked */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Image Gallery Section -->
+        <div class="image-gallery">
+            <div class="main-image">
+                <img id="mainImage" src="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-0-I-637870827777113382_dbb1c833-7e76-4aff-a120-4a8f2086f777.jpg?v=1657263584" alt="Super Mario Odyssey">
+            </div>
+            <div class="thumbnail-images">
+                <img src="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-2-I-637800939502832863_3c6802b0-0c94-4ede-82d2-a4a422f64034.jpg?v=1657263584" alt="Thumbnail 1" data-image-url="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-2-I-637800939502832863_3c6802b0-0c94-4ede-82d2-a4a422f64034.jpg?v=1657263584">
+                <img src="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-4-I-637800939502989094_cb3536cc-077e-4696-a420-5dbda204904a.jpg?v=1657263584" alt="Thumbnail 2" data-image-url="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-4-I-637800939502989094_cb3536cc-077e-4696-a420-5dbda204904a.jpg?v=1657263584">
+                <img src="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-3-I-637800939507989088_5bb79fbf-0a8e-41ab-87d2-1b620d1cbe37.jpg?v=1657263584" alt="Thumbnail 3" data-image-url="https://www.jbhifi.com.au/cdn/shop/products/583357-Product-3-I-637800939507989088_5bb79fbf-0a8e-41ab-87d2-1b620d1cbe37.jpg?v=1657263584">
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h1 class="product-title">The Legend of Zelda: Breath Of The Wild</h1>
+            <p class="price">$79.99</p>
+            <p class="rating">★★★★★ (5/5)</p>
+            <p class="stock-status">In Stock</p>
+            <button class="add-to-cart">Download Now</button>
+            <div class="bundle">
+                <div class="bundle-price">Venture into a stunning open world in The Legend of Zelda: Breath of the Wild. Play as Link and embark on an epic journey to defeat Calamity Ganon, solving intricate puzzles, battling formidable enemies, and discovering countless secrets. With boundless exploration and breathtaking landscapes, it's an unforgettable adventure!
+                  <!-- Magnify and Minimize Buttons -->
+    <div class="text-size-controls">
+        <button id="magnify" class="text-size-btn">A+</button>
+        <button id="minimize" class="text-size-btn">A-</button>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Game Card List -->
+<div class="container game-list">
+    <a href="LM3.html" class="game-card" target="_blank">
+        <img src="https://www.jbhifi.com.au/cdn/shop/products/362997-Product-0-I.jpg?v=1572491618" alt="Zelda Game">
+        <h4 class="game-title">Luigi's Manison 3</h4>
+        <p class="game-price">$69.99</p>
+        <p class="game-deposit">★★★★☆ (33 reviews)</p>
+
+    </a>
+    <a href="AC.html" class="game-card" target="_blank">
+        <img src="https://www.jbhifi.com.au/cdn/shop/products/385899-Product-0-I_6f166bec-5e03-4d88-bb82-06b811a2fc0a.jpg?v=1581889432" alt="">
+        <h4 class="game-title">Animal Crossing New Horizons</h4>
+        <p class="game-price">$69.99</p>
+        <p class="game-deposit">★★★★☆ (243 reviews)</p>
+    </a>
+    <a href="MK8D.html" class="game-card" target="_blank">
+        <img src="https://www.jbhifi.com.au/cdn/shop/products/335342-Product-0-I_c1eba546-2370-4c80-8742-e9384650e18c.jpg?v=1616705884" alt="NBA 2K25">
+        <h4 class="game-title">Mario Kart 8 Deluxe        </h4>
+        <p class="game-price">$69.99</p>
+        <p class="game-deposit">★★★★☆ (162 reviews)</p>
+
+    </a>
+</div>
+
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 style="color: black;">Payment Gateway</h2>
+            <p style="color:#000;">Enter payment details to complete your purchase:</p>
+            <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16">
+            <small id="cardNumberError" style="color:red; display:none;">Please enter a valid 16-digit card number.</small><br>
+
+            <input type="text" id="cardholderName" placeholder="Cardholder Name">
+            <small id="cardholderNameError" style="color:red; display:none;">Please enter the cardholder's name.</small><br>
+
+            <input type="number" id="cvv" placeholder="CVV" maxlength="3">
+            <small id="cvvError" style="color:red; display:none;">Please enter a valid 3-digit CVV.</small><br>
+
+            <button class="pay-now" id="payNowButton">Pay Now</button>
+        </div>
+    </div>
+
+
+        <!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSuccessModal">&times;</span>
+        <h2 style="color: #000;">Payment Successful!</h2>
+        <div class="download-container">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBarFill">0%</div>
+            </div>
+            <p class="download-message" id="downloadMessage">Your download is starting...</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <script>
+         // Variables for modals and buttons
+         var modal = document.getElementById('paymentModal');
+        var successModal = document.getElementById('successModal');
+        var addToCartButton = document.querySelector('.add-to-cart');
+        var closeModalButton = document.getElementById('closeModal');
+        var payNowButton = document.getElementById('payNowButton');
+        var closeSuccessModalButton = document.getElementById('closeSuccessModal');
+        var mainImage = document.getElementById('mainImage');
+        var thumbnails = document.querySelectorAll('.thumbnail-images img');
+
+        // Open payment modal when 'Add to Cart' is clicked
+        addToCartButton.addEventListener('click', function() {
+            modal.style.display = 'block';
+        });
+
+        // Close payment modal when 'X' is clicked
+        closeModalButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Payment process on clicking 'Pay Now'
+        payNowButton.addEventListener('click', function() {
+            var cardNumber = document.getElementById('cardNumber').value;
+            var cardholderName = document.getElementById('cardholderName').value;
+            var cvv = document.getElementById('cvv').value;
+            var isValid = true;
+
+            // Validate card number (16 digits)
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                document.getElementById('cardNumberError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('cardNumberError').style.display = 'none';
+            }
+
+            // Validate cardholder name (not empty)
+            if (cardholderName.trim() === "") {
+                document.getElementById('cardholderNameError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('cardholderNameError').style.display = 'none';
+            }
+
+            // Validate CVV (3 digits)
+            if (cvv.length !== 3 || isNaN(cvv)) {
+                document.getElementById('cvvError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('cvvError').style.display = 'none';
+            }
+
+            // If all inputs are valid, show success modal
+            if (isValid) {
+                modal.style.display = 'none';
+                successModal.style.display = 'block';
+            }
+        });
+
+        // Close success modal when 'X' is clicked
+        closeSuccessModalButton.addEventListener('click', function() {
+            successModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            } else if (event.target == successModal) {
+                successModal.style.display = 'none';
+            }
+        }
+
+        // Switch main image with thumbnail click
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.addEventListener('click', function() {
+                var newImageUrl = this.getAttribute('data-image-url');
+                mainImage.src = newImageUrl;
+            });
+        });
+        // Function to simulate download progress
+function simulateDownload() {
+    var progressBarFill = document.getElementById('progressBarFill');
+    var downloadMessage = document.getElementById('downloadMessage');
+    var width = 0;
+    
+    var interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);
+            downloadMessage.textContent = "Download Complete!";
+        } else {
+            width++;
+            progressBarFill.style.width = width + '%';
+            progressBarFill.textContent = width + '%';
+        }
+    }, 50); // Adjust the interval for faster or slower progress
+}
+
+// Payment process on clicking 'Pay Now'
+payNowButton.addEventListener('click', function() {
+    var cardNumber = document.getElementById('cardNumber').value;
+    var cardholderName = document.getElementById('cardholderName').value;
+    var cvv = document.getElementById('cvv').value;
+    var isValid = true;
+
+    // Validate card number (16 digits)
+    if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+        document.getElementById('cardNumberError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('cardNumberError').style.display = 'none';
+    }
+
+    // Validate cardholder name (not empty)
+    if (cardholderName.trim() === "") {
+        document.getElementById('cardholderNameError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('cardholderNameError').style.display = 'none';
+    }
+
+    // Validate CVV (3 digits)
+    if (cvv.length !== 3 || isNaN(cvv)) {
+        document.getElementById('cvvError').style.display = 'block';
+        isValid = false;
+    } else {
+        document.getElementById('cvvError').style.display = 'none';
+    }
+
+    // If all inputs are valid, show success modal and simulate download
+    if (isValid) {
+        modal.style.display = 'none';
+        successModal.style.display = 'block';
+        simulateDownload();
+    }
+});
+const bundleText = document.querySelector('.bundle-price');
+    const magnifyButton = document.getElementById('magnify');
+    const minimizeButton = document.getElementById('minimize');
+
+    let currentFontSize = 16; // Default size
+    const maxFontSize = 30;   // Maximum font size
+    const minFontSize = 12;   // Minimum font size
+
+    magnifyButton.addEventListener('click', () => {
+        if (currentFontSize < maxFontSize) {
+            currentFontSize += 2;
+            bundleText.style.fontSize = currentFontSize + 'px';
+        }
+    });
+
+    minimizeButton.addEventListener('click', () => {
+        if (currentFontSize > minFontSize) {
+            currentFontSize -= 2;
+            bundleText.style.fontSize = currentFontSize + 'px';
+        }
+    });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Games</title>
+    <style>
+        :root {
+            --footer-bg-image: url('https://media.istockphoto.com/id/1822889082/vector/luxury-background-curved-shapes-lines-lights-and-shadows.jpg?s=612x612&w=0&k=20&c=jfMsPDaJITe72HyX6w2qQP7yT8rNJQlL4tUEYpttMMI=');
+            --footer-bg-overlay: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+            --footer-text-color: #fff;
+            --footer-hover-color: #ff5733;
+            --footer-underline-color: #ff5733;
+            --font-family: "Arial", Arial, sans-serif;
+            --font-size-large: 1.2rem;
+            --font-size-medium: 1.1rem;
+            --font-weight-bold: 700;
+            --font-weight-medium: 600;
+            --logo-height-medium: 80px;
+            --button-bg-color: #ff5733;
+            --button-hover-bg-color: #c70039;
+            --input-bg-color: #333;
+            --input-border-color: #555;
+            --section-padding: 1rem 2rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: #000;
+            color: var(--footer-text-color);
+        }
+
+        .footer {
+            background-image: var(--footer-bg-image);
+            background-size: cover;
+            background-position: center;
+            background-color: var(--footer-bg-overlay);
+            padding: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+            color: var(--footer-text-color);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            height: var(--logo-height-medium);
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer-links li {
+            position: relative;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--footer-text-color);
+            font-size: var(--font-size-medium);
+            font-weight: var(--font-weight-medium);
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--footer-hover-color);
+            transform: scale(1.1);
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: var(--footer-underline-color);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-links a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .newsletter {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            margin-bottom: 1rem;
+            font-size: var(--font-size-medium);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 0.5rem;
+            font-size: var(--font-size-medium);
+            border: 1px solid var(--input-border-color);
+            border-radius: 4px;
+            width: 300px;
+            max-width: 100%;
+            background-color: var(--input-bg-color);
+            color: var(--footer-text-color);
+        }
+
+        .newsletter button {
+            padding: 0.5rem 1rem;
+            font-size: var(--font-size-medium);
+            color: #fff;
+            background-color: var(--button-bg-color);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            background-color: var(--button-hover-bg-color);
+        }
+
+        .social-media {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .social-media a {
+            font-size: 1.5rem;
+            color: var(--footer-text-color);
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: var(--footer-hover-color);
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9rem;
+        }
+
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .popup h2 {
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .popup p {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .popup button {
+            background-color: var(--button-bg-color);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .popup button:hover {
+            background-color: var(--button-hover-bg-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="Assessment Screenshots/Creamy Yellow Orange Retro Gaming Logo (1).png" alt="Quantum Games Logo" class="footer-logo">
+            <ul class="footer-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GENRES</a></li>
+                <li><a href="#">PS5</a></li>
+                <li><a href="#">XBOX</a></li>
+                <li><a href="#">NINTENDO</a></li>
+            </ul>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quantum Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Section -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Thank You for Subscribing!</h2>
+            <p>You have been successfully subscribed to our newsletter.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Include Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
+        });
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

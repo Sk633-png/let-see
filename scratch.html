@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Games</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        body{
+
+background-image: url(https://media.istockphoto.com/id/1822889082/vector/luxury-background-curved-shapes-lines-lights-and-shadows.jpg?s=612x612&w=0&k=20&c=jfMsPDaJITe72HyX6w2qQP7yT8rNJQlL4tUEYpttMMI=);
+}
+
+        /* Navbar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .logo-container {
+            flex-shrink: 0; /* Prevents logo from shrinking */
+        }
+
+        .logo {
+            height: 100px; /* Increased size */
+            width: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+            justify-content: flex-start; /* Aligns text to the left */
+            position: relative;
+            left: 25%; /* Shift text to the left */
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem; /* Font size */
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a:hover {
+            color: #007bff; /* Blue highlight color */
+            transform: scale(1.1);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px; /* Thicker underline */
+            background-color: #007bff; /* Blue highlight color */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Flexbox for centering Scratch container */
+        .page-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px); /* Adjust height to leave space for navbar */
+        }
+
+        .scratch-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .scratch-container iframe {
+            border: none;
+        }
+
+        .scratch-container img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar at the top -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Assessment Screenshots/Creamy Yellow Orange Retro Gaming Logo (1).png" alt="Quantum Games Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="ps5.html">PS5</a></li>
+            <li><a href="xbox.html">XBOX</a></li>
+            <li><a href="nintendo.html">NINTENDO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Scratch Embed centered -->
+    <div class="page-body">
+        <div class="scratch-container">
+            <img src="Assessment Screenshots/Screenshot 2024-09-20 at 7.52.15 PM.png" alt="">
+            <br><br>
+            <iframe src="https://scratch.mit.edu/projects/1024554515/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <!-- Description below the Scratch embed -->
+            <div style="max-width: 600px; margin: 20px auto; padding: 20px; background-color: #222; border: 1px solid #555; border-radius: 10px; text-align: center;">
+                <p style="color: #fff; margin: 0;">
+                    Malware Mayhem’ is an innovative and educational game coded by the Scratch platform. This game is designed and manufactured to raise awareness of the cybersecurity issues looming in our co-existing world. This is executed by informing the players about Malware by listing and showcasing prevention strategies to further increase robust security.  The players delve into the role of Cyberskull, an audacious digital saviour who must navigate various decently challenging parkour levels and collect antivirus protections to confront and defeat the Hacker Virus. </p>
+        </div>
+    </div>
+
+
+
+  
+
+</body>
+</html>
